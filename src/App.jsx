@@ -46,7 +46,7 @@ export default function App() {
 
   if (isLoading) {
     return (<>
-      <div className='flex justify-center items-center w-full h-screen bg-black'>
+      <div className='flex justify-center items-center w-full h-screen bg-[#222] '>
         <section className="dots-container">
           <div className="dot" />
           <div className="dot" />
@@ -68,12 +68,12 @@ export default function App() {
 
 
   return (
-    <div>
+    <div className='h-screen w-full flex justify-center items-center'>
 
-      <div className="bg-[linear-gradient(135deg,#00feba,#5b548a)] card w-[90%] max-w-[500px]  mx-auto my-[20px] text-white  rounded-[20px] py-[40px] px-[35px] text-center ">
-        <div className="search w-full flex justify-between items-center gap-4">
-          <input onChange={(e) => setSearchValue(e.target.value)} className='search border-0 outline-none bg-color-active text-[#555]  py-[10px] pl-[25px] h-[60px] rounded-[30px] text-[18px] flex-1 ' type="text" placeholder='Enter a city name' spellCheck='false' />
-          <button onClick={handleSearch} className='bg-color-active border-none outline-none rounded-full min-w-[60px] min-h-[60px] cursor-pointer '>
+      <div className="bg-[linear-gradient(135deg,#00feba,#5b548a)] card w-[90%] max-w-[500px]  mx-auto  text-white  rounded-[20px] py-[40px] px-[35px] text-center ">
+        <div className="search w-full flex justify-between items-center gap-4  relative overflow-hidden">
+          <input onChange={(e) => setSearchValue(e.target.value)} className='search border-0 outline-none bg-color-active text-[#555]  py-[10px] px-[25px] h-[60px] w-full rounded-[30px] text-[18px]  ' type="text" placeholder='Enter a city name' spellCheck='false' />
+          <button onClick={handleSearch} className='bg-[linear-gradient(90deg,#00feba,#5b548a)] border-none outline-none rounded-full min-w-[60px] min-h-[60px] cursor-pointer shadow-2xl absolute right-0'>
             <i className="fa-solid fa-magnifying-glass text-[20px] text-[#555] "></i>
           </button>
         </div>
