@@ -46,7 +46,7 @@ export default function App() {
 
   if (isLoading) {
     return (<>
-      <div className='flex justify-center items-center w-full h-screen bg-[#222] '>
+      <div className='flex justify-center items-center w-full h-[100dvh] bg-[#222] '>
         <section className="dots-container">
           <div className="dot" />
           <div className="dot" />
