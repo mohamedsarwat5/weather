@@ -68,7 +68,7 @@ export default function App() {
 
 
   return (
-    <div className='h-screen w-full flex justify-center items-center'>
+    <div className='h-[100dvh] parent w-full flex justify-center items-center'>
 
       <div className="bg-[linear-gradient(135deg,#00feba,#5b548a)] card w-[90%] max-w-[500px]  mx-auto  text-white  rounded-[20px] py-[40px] px-[35px] text-center ">
         <div className="search w-full flex justify-between items-center gap-4  relative overflow-hidden">
